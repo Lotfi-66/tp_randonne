@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>{% block title %}Rando shop{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+            {{ encore_entry_link_tags('styles') }}  <!-- Ajoutez cette ligne -->
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            <div class="container">
+                <div class="product-card">
+                    <img src="path/to/image1.jpg" alt="Produit 1">
+                    <h2>Produit 1</h2>
+                    <p>Description du produit 1.</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="path/to/image2.jpg" alt="Produit 2">
+                    <h2>Produit 2</h2>
+                    <p>Description du produit 2.</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <!-- Ajoutez plus de produits si nécessaire -->
+            </div>
+        {% endblock %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </body>
+</html>

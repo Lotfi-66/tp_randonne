@@ -1,0 +1,13 @@
+<div class="ui cards">
+	{% for article in articles %}
+		<div class="card  ">
+			
+			<div class="content">
+				<h5 class="header">{{ article['titre'] }}</h5>
+				<div class="description">{{ article['description']}}</div>
+				<div class="description">Prix: {{ article['ttc'] }}</div>
+			</div>
+		
+		</div>
+	{% endfor %}
+</div>

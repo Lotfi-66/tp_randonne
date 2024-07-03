@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ articles['titre'] }}
+{% endblock %}
+
+{% block body %}
+	<div class="cards">
+		<div class="card">
+		
+			<div class="content">
+				<h5 class="header">{{ articles['titre'] }}</h5>
+				<div class="description">{{ articles['description'] }}</div>
+				{# <a href="/detail/{{ loop.index0 }}"> #}
+				<a href="/">home</a>
+			</div>
+		</div>
+	{% endblock %}

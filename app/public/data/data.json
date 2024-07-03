@@ -1,0 +1,21 @@
+[
+    {
+        "titre": "chaussure",
+        "description": "Super chaussure de randonné en cuir pour franchir nimporte quelle sommets",
+        "img": "chaussure.jpg",
+        "prix": 200
+    },
+    {
+        "titre": "t-shirt",
+        "description": "Super t-shirt de randonné aéré anti transpirant ",
+        "img": "t-shirt.jpg",
+        "prix": 100
+    },
+    {
+        "titre": "baton de marche ",
+        "description": "Super baton de marche en carbonne, seulement 120gr ",
+        "img": "baton.jpg",
+        "prix": 50
+
+    }
+]

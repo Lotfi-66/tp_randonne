@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Article {{ id }}{% endblock %}
+
+{% block body %}
+    <h1>Article {{ id }}</h1>
+    <p>Contenu de l'article avec l'ID {{ id }}...</p>
+{% endblock %}
+doctrine:
+    dbal:
+        driver: pdo_mysql
+        host: '%env(DATABASE_HOST)%'
+        port: '%env(DATABASE_PORT)%'
+        dbname: '%env(DATABASE_NAME)%'
+        user: '%env(DATABASE_USER)%'
+        password: '%env(DATABASE_PASSWORD)%'
+        charset: UTF8
+        mapping_types:
+            enum: string
